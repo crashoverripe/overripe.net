@@ -38,22 +38,26 @@
                 <h1 class="title"><img class="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/crash.png" /><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
                 {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
         </header>
+        <hr>
         <nav>
-          <ul>
+          <p>
           {% for title, link in MENUITEMS %}
-              <li><a href="{{ link }}">{{ title }}</a></li>
+              <a href="{{ link }}">{{ title }}</a>
           {% endfor %}
           {% if DISPLAY_PAGES_ON_MENU %}
             {% for p in pages %}
-              <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+              <span{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+              {% if not loop.last %} • {% endif %}
             {% endfor %}
+            |
           {% endif %}
           {% if DISPLAY_CATEGORIES_ON_MENU %}
             {% for cat, null in categories %}
-              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              <span{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+              {% if not loop.last %} • {% endif %}
             {% endfor %}
           {% endif %}
-          </ul>
+          </p>
         </nav>
         <hr>
         <main>
