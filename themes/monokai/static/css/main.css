@@ -33,6 +33,10 @@ nav p {
     margin: 0px;
 }
 
+pre {
+    background-color: #000;
+}
+
 hr {
     display: block; height: 1px;
     border: 0; border-top: 1px dashed var(--monokai-orange);
