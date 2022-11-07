@@ -18,6 +18,17 @@ body {
     color: var(--monokai-white);
 }
 
+.title {
+    font-size: 64px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+}
+
 hr {
     display: block; height: 1px;
     border: 0; border-top: 1px dashed var(--monokai-orange);

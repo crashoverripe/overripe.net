@@ -35,9 +35,9 @@
 </head>
 <body>
         <header>
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                <h1 class="title"><img class="logo" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/crash.png" /><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                {% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}
         </header>
-        
         <nav>
           <ul>
           {% for title, link in MENUITEMS %}

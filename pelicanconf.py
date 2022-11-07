@@ -1,5 +1,6 @@
 AUTHOR = 'Crash Overripe'
 SITENAME = 'overripe.net'
+SITESUBTITLE = "\"Look, I need a handle, ok? I don't have an identity if I don't have a handle.\""
 SITEURL = ''
 
 PATH = 'content'
