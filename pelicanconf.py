@@ -3,6 +3,7 @@ SITENAME = 'overripe.net'
 SITEURL = ''
 
 PATH = 'content'
+THEME = 'themes/monokai'
 
 TIMEZONE = 'America/New_York'
 

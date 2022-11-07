@@ -1,0 +1,61 @@
+@import url("fonts.css");
+
+:root {
+    --monokai-background: #2e2e2e;
+    --monokai-comments: #797979;
+    --monokai-white: #d6d6d6;
+    --monokai-yellow: #e5b567;
+    --monokai-green: #b4d273;
+    --monokai-orange: #e87d3e;
+    --monokai-purple: #9e86c8;
+    --monokai-pink: #b05279;
+    --monokai-blue: #6c99bb;
+}
+
+body {
+    font-family: DejaVuSansMono;
+    background: var(--monokai-background);
+    color: var(--monokai-white);
+
+}
+
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px dashed var(--monokai-orange);
+    margin: 1em 0; padding: 0; }
+
+header h1 a:visited {
+    color: var(--monokai-yellow);
+}
+
+a:link {
+    color: var(--monokai-yellow);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--monokai-pink);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--monokai-blue);
+    text-decoration: none;
+}
+a:active {
+    color: var(--monokai-white);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    color: var(--monokai-purple);
+}
+
+time {
+    color: var(--monokai-green);
+}
+
+address {
+    color: var(--monokai-blue);
+}
+.category {
+    color: var(--monokai-orange);
+}
