@@ -16,13 +16,13 @@ body {
     font-family: DejaVuSansMono;
     background: var(--monokai-background);
     color: var(--monokai-white);
-
 }
 
-
-hr { display: block; height: 1px;
+hr {
+    display: block; height: 1px;
     border: 0; border-top: 1px dashed var(--monokai-orange);
-    margin: 1em 0; padding: 0; }
+    margin: 1em 0; padding: 0;
+}
 
 header h1 a:visited {
     color: var(--monokai-yellow);
@@ -32,14 +32,17 @@ a:link {
     color: var(--monokai-yellow);
     text-decoration: none;
 }
+
 a:visited {
     color: var(--monokai-pink);
     text-decoration: none;
 }
+
 a:hover {
     color: var(--monokai-blue);
     text-decoration: none;
 }
+
 a:active {
     color: var(--monokai-white);
     text-decoration: none;
@@ -56,6 +59,7 @@ time {
 address {
     color: var(--monokai-blue);
 }
+
 .category {
     color: var(--monokai-orange);
 }
