@@ -18,6 +18,10 @@ body {
     color: var(--monokai-white);
 }
 
+main {
+    max-width: 1000px;   
+}
+
 .title {
     font-size: min(10vw, 64px);
     margin-bottom: 0px;
